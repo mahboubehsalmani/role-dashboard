@@ -13,12 +13,12 @@ type LoaderProps = {
   loading: boolean;
 };
 
-const Loader = (props: LoaderProps) => {
+const Loader = ({ loading }: LoaderProps) => {
   return (
     <Box sx={{ padding: 8, alignItems: "center" }}>
       <PulseLoader
         color={colors.deepPurple[500]}
-        loading={props.loading}
+        loading={loading}
         cssOverride={override}
         size={24}
         aria-label="Loading Spinner"

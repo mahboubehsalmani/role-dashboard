@@ -26,11 +26,6 @@ const demoRoles: Role[] = [
         id: "706ee8e3-6034-4f27-ab20-4397ad874a09",
         name: "Read Data",
       },
-
-      {
-        id: "3add53a6-ede2-4760-8942-dbd08d209d2c",
-        name: "Delete Data",
-      },
     ],
   },
   {

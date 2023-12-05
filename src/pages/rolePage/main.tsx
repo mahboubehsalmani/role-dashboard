@@ -121,7 +121,6 @@ const RolePage = () => {
         permissions={permissions}
         loading={loading}
         editPermissionLoading={editPermissionLoading}
-        error={error}
         editPermissionsForRole={editPermissionsForRole}
       />
     </Box>

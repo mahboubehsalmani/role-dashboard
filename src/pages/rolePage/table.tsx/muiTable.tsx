@@ -1,5 +1,5 @@
 import { Role, Permission } from "../../../services/roleRepository";
-import TRow from "./tRow";
+import RoleRow from "./roleRow";
 import Loader from "../../../components/loader";
 import {
   Paper,
@@ -22,13 +22,11 @@ type tableProps = {
   ) => void;
   loading: boolean;
   editPermissionLoading: boolean;
-  error: string | null;
 };
 
 const MuiTable = ({
   roles,
   loading,
-  error,
   permissions,
   editPermissionsForRole,
   editPermissionLoading,
@@ -53,7 +51,7 @@ const MuiTable = ({
           ) : (
             roles.map((role) => {
               return (
-                <TRow
+                <RoleRow
                   key={role.id}
                   row={role}
                   permissions={permissions}
